@@ -18,9 +18,14 @@
   .nav-links {
     list-style: none;
     display: flex;
-    justify-content: relative;
+    flex-wrap: wrap;
+    justify-content: space-equally; /* Space between nav items */
     align-items: center;
-    gap: 20px;
+    gap: 20px; /* space between nav items */
+    margin: 20px 0; /* Space between nav and top of the page */
+  }
+  .nav-links:hover{
+    transform: scale(1.05); /* Scale up the card on hover */
   }
   .logo:hover {
     transform: scale(1.05); /* Scale up the card on hover */
