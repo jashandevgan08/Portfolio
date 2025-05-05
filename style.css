@@ -96,5 +96,15 @@
     font-size: 1.2rem;
     margin-top: 10px; /* Space between image and text */
   }
-  
+  .project-link{
+      text-decoration: none;
+      color: inherit;
+      display: inline-block;
+    }
+    .project-card:hover{
+      color:#FFA500;
+    }
+    .project-link:hover .project-card {
+      transform: scale(1.05); /* Ensures hover works when wrapped in link */
+    }
   
