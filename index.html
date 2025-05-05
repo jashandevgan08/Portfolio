@@ -2,21 +2,76 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <!-- Ensures proper rendering and touch zooming on mobile devices -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+    <!-- External CSS file link -->
     <link rel="stylesheet" href="style.css">
+    
     <title>Landing Page</title>
 </head>
+
+<!-- Header section including navigation and contact info -->
 <header>
-    <div>
+    <!-- Gradient bar containing navigation and contact details -->
+    <span class="gradient-bar">
+        <!-- Navigation bar with GitHub and LinkedIn links -->
         <nav>
             <ul class="nav-links">
-                <li><a href="https://github.com/jashandevgan08"><img src="img/channels4_profile.jpg" height="25"></a></li>
-                <li><a href="https://www.linkedin.com/in/jashan-devgan-34b83a211/"><img src="img/images.png" height="25"></a></li>
+                <li>
+                  <a href="https://github.com/yourusername" target="_blank" aria-label="GitHub">
+                    <i class="fab fa-github fa-2x" style="color: white;"></i>
+                  </a>
+                  
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com" target="_blank">
+                        <img src="img/images.png" height="40vh" width="40vw"     alt="LinkedIn"  />
+                    </a>
+                </li>
             </ul>
         </nav>
-    </div>
+
+        <!-- Logo/Brand name section -->
+        <div class="logo">
+            <h1>Your Name</h1>
+        </div>
+
+        <!-- Contact information section -->
+        <div class="Contact">
+            <h6> +91 123456789 || ✉️xyz@gmail.com</h6>
+        </div>
+    </span>
 </header>
+
+<!-- Main body content -->
 <body>
-    
+    <div>
+        <!-- Portfolio section -->
+        <section class="hero">
+          <img src="img/IMG_1082.jpeg" alt="Profile Image" class="hero-img" />
+          <div class="hero-text-box">
+            <h1><span class="bold">Port<span class="highlight">folio</span></span></h1>
+            <p>
+              Welcome to my portfolio! Here, you can explore my projects, skills, and the work I’ve done
+              throughout my career. I specialize in web development, design, and creating impactful digital
+              experiences. Feel free to browse and get in touch for collaborations or inquiries.
+            </p>
+          </div>
+        </section>
+      </div>
+      <section>
+        <div>
+          <h1>My Projects</h1>
+        </div>
+      </section>
+    <footer>
+      <!-- Footer section with copyright information -->
+      <div class="footer">
+          <p >&copy; 2023 Your Name. All rights reserved.</p>
+      </div>
+  </footer>
 </body>
 </html>
