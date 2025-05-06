@@ -1,32 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Styled Project</title>
+  <style>
+    .project {
+      background-color: #222;
+      color: white;
+      padding: 20px;
+      border-radius: 10px;
+      font-family: Arial, sans-serif;
+    }
+
+    /* This child should not inherit the styles */
+    .no-style {
+      all: unset;
+      display: block;
+      padding: 10px;
+      margin-top: 10px;
+      background-color: #f2f2f2;
+      color: #000;
+      font-family: sans-serif;
+      border-radius: 5px;
+      box-shadow: 0 0 5px rgba(0,0,0,0.2);
+    }
+  </style>
 </head>
 <body>
-     
-    <section class="projects">
-        <h1>My Projects</h1>
-      
-        <div class="project-container">
-          <a href="project1.html" class="project-link">
-            <div class="project-card">
-              <img src="img/IMG_1082.jpeg" alt="Project 1" />
-              <h3>Project 1</h3>
-              <p>Brief description of the project.</p>
-            </div>
-          </a>
-      
-          <a href="project2.html" class="project-link">
-            <div class="project-card">
-              <img src="img/IMG_1082.jpeg" alt="Project 2" />
-              <h3>Project Title 2</h3>
-              <p>Brief description of the project.</p>
-            </div>
-          </a>
-        </div>
-      </section>
+
+  <div class="project">
+    <h1>Project Title</h1>
+    <p>This is a styled section.</p>
+    
+    <div class="no-style">
+      This section is NOT affected by the parent styles.
+    </div>
+  </div>
+
 </body>
 </html>
