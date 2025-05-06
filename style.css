@@ -1,115 +1,203 @@
+/* Reset & Base Styles */
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box; /* Ensures padding and borders are included in element's total width/height */
-  }
-  body {
-    margin:20px ;
-    font-family: 'Poppins', sans-serif;
-    background-color: #262D4C   ; /* Dark navy blue */
-    color: #ffffff;
-  }
-  .gradient-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  .nav-links {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-equally; /* Space between nav items */
-    align-items: center;
-    gap: 20px; /* space between nav items */
-    margin: 20px 0; /* Space between nav and top of the page */
-  }
-  .nav-links:hover{
-    transform: scale(1.05); /* Scale up the card on hover */
-  }
-  .logo:hover {
-    transform: scale(1.05); /* Scale up the card on hover */
-  }
-  
-  .hero {
-    display: flex;
-    margin-top: 18vh;
-    align-items: center;
-    justify-content: space-between;
-    gap: 40px; /* space between text and image */
-    padding: 40px 0;
-  }  
-  .hero-text-box {
-    margin-left: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    left: 20vw;
-    align-items: center;
-    gap: 20px; /* space between text lines */
-    width: 50vw; /* Adjust the width as needed */
-    font-size: large;
-    font-family: "poppins", sans-serif;
-  }
-  
-  .hero-img
-  {
-    position: relative;
-    top: 10% ;
-    right: 2vw;
-    width: 100%; /* Adjust the width as needed */
-    height: 50vh; /* Adjust the height as needed */
-    overflow: hidden;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-  
-.projects {
-    display: flex;
-    flex-direction: column;
-    align-items: center;       /* Horizontally center everything */
-    padding: 40px 20px;
-    font-family: 'Poppins', sans-serif;
-    gap: 30px;  
-    margin-top: 15vh;   
-                /* Space between heading and cards */
-  }
-   
-  .project-card {  
-    position: relative;           /* Use most of the viewport width */         /* But limit max size */
-    display: flex;
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #121212;
+  color: #e0e0e0;
+  padding: 0;
+  overflow-x: hidden;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  height:100%;
+}
+html{
+  height: 100%;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+}
+
+a:hover,
+.nav-links li:hover {
+  color: #00bcd4;
+  transform: scale(1.05);
+}
+
+/* ===== Header & Navigation ===== */
+header {
+  background: linear-gradient(to right, #1f1f1f, #2a2a2a);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  align-items: center;
+  padding: 0;
+}
+.nav-links i {
+  color: #e0e0e0;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.nav-links i:hover {
+  color: #00bcd4;
+  transform: scale(1.2);
+}
+.logo h1 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+header h6 {
+  font-size: 0.9rem;
+  color: #bbbbbb;
+}
+
+/* ===== Hero Section ===== */
+.hero {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 60px 40px;
+  background-color: #1a1a1a;
+  min-height: calc(100vh - 120px); /* adjusts for header height */
+}
+
+
+.hero-text-box {
+  flex: 1 1 500px;
+  max-width: 600px;
+  padding: 20px;
+}
+
+.hero-text-box h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #00bcd4;
+}
+
+.hero-text-box p {
+  font-size: 1.1rem;
+  color: #dddddd;
+  line-height: 1.8;
+}
+
+.hero-img-wrapper {
+  flex: 1 1 40%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.hero-img {
+  border-radius: 16px;
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0 10px 30px rgba(0, 188, 212, 0.3);
+}
+
+/* ===== Media Queries ===== */
+@media (max-width: 768px) {
+  header {
     flex-direction: column;
     align-items: center;
-    background-color: #1F2235;
-    border-radius: 10px;
-    width: 35vw;
-    padding:  20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
-    
-  }
-  .project-card:hover {
-    transform: scale(1.05); /* Scale up the card on hover */
-  }
-  .projects h1 {
-    font-size: 3rem; /* Space between heading and cards */
-  }
-  .project-card img {
-    width: 25vw; /* Adjust the height as needed */
-  }
-  .project-card p {
-   width: 30vw; /* Adjust the height as needed */
     text-align: center;
-    font-size: 1.2rem;
-    margin-top: 10px; /* Space between image and text */
+    padding: 20px;
   }
-  .project-link{
-      text-decoration: none;
-      color: inherit;
-      display: inline-block;
-    }
-    .project-card:hover{
-      color:#FFA500;
-    }
-    .project-link:hover .project-card {
-      transform: scale(1.05); /* Ensures hover works when wrapped in link */
-    }
-  
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    margin: 15px 0;
+  }
+
+  .hero {
+    flex-direction: column;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  .hero-text-box,
+  .hero-img-wrapper {
+    flex: 1 1 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-text-box p {
+    font-size: 1rem;
+  }
+
+  .resume {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+  }
+
+  .logo h1 {
+    font-size: 1.4rem;
+  }
+}
+
+.hero {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+
+
+.btn {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 10px 0;
+  font-size: 1.2rem;
+}
+
+.btn a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: transparent;
+  border: 1px solid #00bcd4;
+  border-radius: 8px;
+  color: #e0e0e0;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.btn a:hover {
+  background-color: #00bcd4;
+  color: #121212;
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 188, 212, 0.3);
+}
