@@ -43,7 +43,6 @@ header {
   background-color: #FFFFFF;
   z-index: 100;
 }
-
 .nav-links {
   list-style: none;
   display: flex;
@@ -61,6 +60,7 @@ header {
   color: #FF6B00;
   transform: scale(1.2);
 }
+
 
 /* ===== Hero Section ===== */
 .hero {
@@ -126,8 +126,6 @@ header {
   flex-wrap: wrap;
   justify-content: center;
   padding: 20px 40px;
-  
-  
 }
 
 .btn a {
@@ -157,6 +155,7 @@ header {
   background-color: #FAF9F6;
   animation: fadeIn 1s ease-in-out forwards;
 }
+
 .about-simple {
   display: flex;
   flex-wrap: wrap;
@@ -168,9 +167,10 @@ header {
   animation: fadeIn 1s ease-in-out forwards;
 }
 
-.about-simple{
+.about-simple {
   background-color: #FFFFFF;
 }
+
 .about-me {
   margin-top: 80px;
 }
@@ -211,10 +211,210 @@ header {
 .about-image {
   height: 500px;
   width: 100%;
-  padding: 20px 40px; 
+  padding: 20px 40px;
   border-radius: 12px;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   margin: 20px;
+}
+
+/* ===== Skills Section ===== */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  padding: 60px 40px;
+  background-color: #FFFFFF;
+}
+
+.skills-text-box {
+  flex: 1 1 100%;
+  max-width: 800px;
+}
+
+.skills h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #2C3E50;
+}
+
+.skills p {
+  font-size: 1rem;
+  color: #4B4B4B;
+  max-width: 800px;
+  margin: 10px auto;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.skill {
+  flex: 1 1 200px;
+  text-align: center;
+  padding: 20px;
+  background-color: #F0F0F0;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.skill i {
+  font-size: 3rem;
+  color: #FF6B00;
+}
+
+.skill h3 {
+  font-size: 1.5rem;
+  margin-top: 10px;
+}
+
+.skill p {
+  font-size: 1rem;
+  margin-top: 10px;
+  color: #4B4B4B;
+}
+
+/* ===== Projects Section ===== */
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  padding: 20px 40px;
+  background-color: #FFFFFF;
+}
+
+.projects-text-box {
+  flex: 1 1 100%;
+  max-width: 800px;
+}
+
+.projects h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #2C3E50;
+}
+
+.projects p {
+  font-size: 1rem;
+  color: #4B4B4B;
+  max-width: 800px;
+  margin: 10px auto;
+}
+
+.project-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.project-card {
+  flex: 1 1 300px;
+  background-color: #F0F0F0;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.project-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.project-info {
+  margin-top: 20px;
+}
+
+.project-info h3 {
+  font-size: 1.5rem;
+}
+
+.project-info p {
+  font-size: 1rem;
+  color: #4B4B4B;
+}
+
+.project-info a {
+  display: inline-block;
+  margin-top: 10px;
+  color: #FF6B00;
+}
+
+.project-info a:hover {
+  color: #FF6B00;
+  transform: scale(1.05);
+}
+
+/* ===== Contact Section ===== */
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  padding: 60px 40px;
+  background-color: #FFFFFF;
+}
+
+.contact-text-box {
+  flex: 1 1 100%;
+  max-width: 800px;
+}
+
+.contact h2 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #2C3E50;
+}
+
+.contact p {
+  font-size: 1rem;
+  color: #4B4B4B;
+  max-width: 800px;
+  margin: 10px auto;
+}
+
+.contact-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.contact-form label {
+  font-size: 1rem;
+  color: #4B4B4B;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #E0E0E0;
+  margin-top: 5px;
+}
+
+.contact-form button {
+  padding: 10px 20px;
+  background-color: #FF6B00;
+  color: #FFF;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.contact-form button:hover {
+  background-color: #FF4500;
 }
 
 /* ===== Footer ===== */
@@ -225,8 +425,8 @@ footer {
   font-size: 0.9rem;
   padding: 10px 0;
   width: 100%;
+  bottom: 0;
 }
-
 /* ===== Animations ===== */
 @keyframes fadeIn {
   to {
@@ -266,6 +466,21 @@ footer {
   .about-text,
   .about-image {
     flex: 1 1 100%;
+  }
+
+  .skills-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-form {
+    flex-direction: column;
+    align-items: center;
   }
 }
 
