@@ -3,40 +3,57 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Styled Project</title>
-  <style>
-    .project {
-      background-color: #222;
-      color: white;
-      padding: 20px;
-      border-radius: 10px;
-      font-family: Arial, sans-serif;
-    }
-
-    /* This child should not inherit the styles */
-    .no-style {
-      all: unset;
-      display: block;
-      padding: 10px;
-      margin-top: 10px;
-      background-color: #f2f2f2;
-      color: #000;
-      font-family: sans-serif;
-      border-radius: 5px;
-      box-shadow: 0 0 5px rgba(0,0,0,0.2);
-    }
-  </style>
+  <link rel="stylesheet" href="project.css" />
+  <title>Projects</title>
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-  <div class="project">
-    <h1>Project Title</h1>
-    <p>This is a styled section.</p>
-    
-    <div class="no-style">
-      This section is NOT affected by the parent styles.
+  <header>
+    <div class="logo">
+      <h1>Projects</h1>
     </div>
-  </div>
+
+    <nav>
+      <ul class="nav-links">
+        <li>
+          <a href="https://github.com/yourusername" target="_blank" aria-label="GitHub">
+            <i class="fab fa-github fa-xl"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://linkedin.com/in/yourusername" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin fa-xl"></i>
+          </a>
+        </li>
+        <li>
+          <a href="resume.html" class="resume">Resume</a>
+        </li>
+      </ul>
+    </nav>
+
+    <div>
+      <h6>+91 123456789 &nbsp;|&nbsp; ✉️ xyz@gmail.com</h6>
+    </div>
+  </header>
+
+  <section class="project-section">
+    <div class="project-card">
+      <h2>BuildIt Constructions</h2>
+      <img src="img/IMG_1082.jpeg" alt="Project Image">
+      <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi, officia!</h3>
+    </div>
+    <div class="project-card">
+      <h2>Skyline Designs</h2>
+      <img src="img/IMG_1082.jpeg" alt="Project Image">
+      <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi, officia!</h3>
+    </div>
+    <div class="project-card">
+      <h2>Urban Builders</h2>
+      <img src="img/IMG_1082.jpeg" alt="Project Image">
+      <h3>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi, officia!</h3>
+    </div>
+  </section>
 
 </body>
 </html>
