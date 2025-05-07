@@ -1,6 +1,6 @@
 # My Web Development Portfolio
 
-This repository contains my web development projects, showcasing various pages and components I have built. It includes HTML, CSS, and JavaScript for responsive, user-friendly web applications.
+This repository contains my web development projects, showcasing various pages and components I have built. It includes HTML, CSS for responsiv, user-friendly web applications.
 
 ## 📁 **File Structure**
 
@@ -25,7 +25,6 @@ project-root/
 
 - **HTML5**: Semantic markup for structured content.
 - **CSS3**: For styling the layout and implementing responsive design.
-- **JavaScript**: For dynamic interactions and functionality.
 - **Flexbox & Grid**: Used for layout responsiveness.
 - **GitHub Actions**: Automated deployment setup using GitHub workflows.
 
