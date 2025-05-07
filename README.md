@@ -1,50 +1,68 @@
-# Project Showcase – My Projects Page
+# My Web Development Portfolio
 
-This is a responsive **project showcase page** built using HTML and CSS. It features a vertically stacked layout with centered project cards and a title, designed to present personal or portfolio projects in a clean, modern interface.
+This repository contains my web development projects, showcasing various pages and components I have built. It includes HTML, CSS, and JavaScript for responsive, user-friendly web applications.
 
-## 🔧 Technologies Used
+## 📁 **File Structure**
 
-- **HTML5**
-- **CSS3**
-- **Google Fonts** (Poppins)
-- **Flexbox** for layout
-
-## 📐 Layout Structure
-
-- **Title Section**: “My Projects” is centered at the top.
-- **Project Cards**: Stacked vertically in a single column, each card contains:
-  - Project image
-  - Project title
-  - Brief description
-
-## 🧱 Folder Structure
-
+The project structure is organized as follows:
 project-root/
 │
-├── index.html
-├── style.css
-└── img/
-└── image1.jpg
-└── image2.jpg
+├── .github/
+│ └── workflows/ # GitHub Actions workflows for deployment and automation
+├── img/ # Images used in the project
+├── index.html # Home page
+├── contact.html # Contact page
+├── project.html # Project showcase page
+├── resume.html # Resume page
+├── skills.html # Skills showcase page
+├── style.css # Global CSS styles
+├── universal.css # Universal styles for the site
+├── script.js # JavaScript for interactive features
+├── README.md # Project README file (this file)
+└── resume.css # Resume-specific styling
 
+## 🚀 **Technologies Used**
 
-## 🎨 Design Highlights
+- **HTML5**: Semantic markup for structured content.
+- **CSS3**: For styling the layout and implementing responsive design.
+- **JavaScript**: For dynamic interactions and functionality.
+- **Flexbox & Grid**: Used for layout responsiveness.
+- **GitHub Actions**: Automated deployment setup using GitHub workflows.
 
-- **Dark theme** with a navy background (`#262D4C`) and card background (`#1F2235`).
-- Cards are responsive and centered using Flexbox.
-- Subtle shadow and transition effects for card hover.
-- Typography using Poppins for modern aesthetic.
+## 🌐 **Live Demo**
 
-## 🖼 Example Preview
+The project is deployed on GitHub Pages. You can view it here:  
+[Live Demo](https://jashandevgan08.github.io/Portfolio)
 
-Here’s how the layout looks:
-Here’s how the layout looks:
+## 📜 **About This Repository**
 
-My Projects
-|
-|-- [Project Card 1]
-|
-|-- [Project Card 2]
-|
-|-- ...
+This repository showcases various web pages that include:
+
+- **Home Page**: A clean, modern landing page with an introduction.
+- **Contact Page**: A page with a contact form for communication.
+- **Projects Page**: A showcase of personal and portfolio projects.
+- **Skills Page**: A list of web development skills and tools.
+- **Resume Page**: A digital version of my professional resume.
+
+## 🔧 **Getting Started**
+
+To set up the project locally, follow these steps:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/repo-name.git
+2. Navigate to the project directory:
+  cd repo-name
+3.Open the index.html file in your browser to view the project.
+
+🧑‍💻 Contributing
+Feel free to fork this repository, submit issues, and send pull requests if you would like to contribute improvements or fixes.
+
+📧 Contact
+For any questions or feedback, feel free to reach out:
+
+Email: devganjashan08@gmail.com
+
+GitHub: @jashandevgan08
+
 
